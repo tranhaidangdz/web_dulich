@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Du Lịch Việt</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li style="--x:1;">
+                    <a href="">Trang chủ</a>
+                </li>
+                <li style="--x:1;">
+                    <a href="">Đặc điểm</a>
+                </li>
+                <li style="--x:1;">
+                    <a href="">Về chúng tôi</a>
+                </li>
+                <li style="--x:1;">
+                    <a href="">Bộ sưu tập</a>
+                </li>
+                <li style="--x:1;">
+                    <a href="">Đánh giá</a>
+                </li>
+                <li style="--x:1;">
+                    <a href="">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="video-container">
+            <video src="./video/y2mate.com - 4K Một góc sông Sài Gòn về đêm  Video time lapse_v720P.mp4" autoplay muted
+                loop></video>
+        </div>
+        <div class="header-content">
+            <h1>Khám phá</h1>
+            <p>Xách ba lô lên và đi thôi nào</p>
+            <form action="index.php" method="post" enctype="multipart/form-data">
+                <h1>Bạn muốn đi đâu hè này</h1>
+                <p>Địa điểm</p>
+                <select name="" id="">
+                    <option value="#">--Chọn địa điểm--</option>
+                </select>
+                <p>Số người</p>
+                <input type="number" name="" min="1" placeholder="Bạn đi bao nhiêu người">
+                <p>Ngày đi</p>
+                <input type="date" name="">
+                <p>Ngày về</p>
+                <input type="date" name="">
+                <button>Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h1 class="h1-style">Liên hệ</h1>
+            <div class="contact-content-top row">
+                <div class="contact-content-item">
+                    <input type="text" name="ten" placeholder="Tên">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" name="diachi" placeholder="Địa chỉ">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" name="dienthoai" placeholder="Điện thoại">
+                </div>
+            </div>
+
+            <div class="contact-content-bottom">
+                <textarea placeholder="Nội dung"></textarea>
+                <button class="btn">Gửi</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
