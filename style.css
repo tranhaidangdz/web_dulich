@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --main-color: #60BFE2;
+    --subtext: 'Open Sans', sans-serif;
 }
 
 * {
@@ -213,7 +215,7 @@ form button:hover {
     margin: 12px 0;
 }
 
-.nice-place-text button {
+.btn {
     height: 30px;
     width: 100px;
     background-color: var(--main-color);
@@ -224,18 +226,18 @@ form button:hover {
     transition: all 0.5s ease;
 }
 
-.nice-place-text button:hover {
+.btn:hover {
     background-color: tomato;
 }
 
-.nice-place h1 {
+.h1-style {
     text-align: center;
     margin-bottom: 50px;
     color: var(--main-color);
     position: relative;
 }
 
-.nice-place h1::before {
+.h1-style::before {
     content: "";
     position: absolute;
     height: 5px;
@@ -247,14 +249,47 @@ form button:hover {
     transform: translateX(-50%);
 }
 
-.nice-place h1::after {
+.h1-style::after {
     position: absolute;
     content: "\2665";
     width: 40px;
     height: 20px;
     color: red;
     background-color: #fff;
-    bottom: -10px;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* ========================about ========================= */
+/* ======================== ve chung toi  ========================= */
+.about {
+    padding: 100px 0;
+}
+
+
+
+.about-content-left {
+    width: 50%;
+}
+
+.about-content-left img {
+    width: 100%;
+}
+
+.about-content-right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.about-content-right h2 {
+    font-family: var(--subtext);
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+.about-content-right p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--subtext);
+
+}
